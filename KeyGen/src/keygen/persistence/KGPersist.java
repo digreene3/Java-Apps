@@ -16,7 +16,7 @@ public class KGPersist {
 	}
 	
 	public ResultSet getKeys(){
-		String query = "SELECT * from key";
+		String query = "SELECT * from keygen.keys";
 		return db.retrieve(con, query);
 	}
 	

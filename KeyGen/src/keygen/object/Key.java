@@ -37,7 +37,7 @@ public class Key {
 		String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 		Random r = new Random();
 		for (int i = 0; i < 15; i++) {
-			if (i % 5 == 0) {
+			if (i % 5 == 0 && i > 0) {
 				key += "-";
 			}
 			if (i < 3) {
@@ -47,6 +47,7 @@ public class Key {
 			}
 		}
 		setKey(key);
+		//System.out.println(key);
 	}
 
 	public boolean equals(Key key) {
