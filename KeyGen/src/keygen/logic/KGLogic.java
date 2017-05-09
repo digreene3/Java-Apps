@@ -74,5 +74,9 @@ public class KGLogic {
 		}
 		return true;
 	}
+	
+	public ArrayList<Key> getKeys(){
+		return keys;
+	}
 
 }
