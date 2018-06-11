@@ -29,4 +29,9 @@ public class KGPersist {
 		String query = "SELECT * from user";
 		return db.retrieve(con, query);
 	}
+	
+	public ResultSet getKeyByUser(String username){
+		String query = "Select key from keygen.key where userID = (Select id from user where username = '" + username + "')";
+		return db.retrieve(con, query);
+	}
 }
